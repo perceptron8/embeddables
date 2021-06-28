@@ -1,12 +1,14 @@
 package jpa;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.Basic;
 import javax.persistence.Embeddable;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 
 @Embeddable
-//@Access(AccessType.FIELD)
+@Access(AccessType.FIELD)
 public class IdentityDocument {
 	@Enumerated(EnumType.STRING)
 	private IdentityDocumentType type;
