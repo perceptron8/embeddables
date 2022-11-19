@@ -1,8 +1,8 @@
 package jpa;
 
-import javax.persistence.Persistence;
-
 import org.junit.jupiter.api.Test;
+
+import jakarta.persistence.Persistence;
 
 public class PersistenceTest {
 	@Test

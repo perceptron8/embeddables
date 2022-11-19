@@ -1,11 +1,11 @@
 package jpa;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Basic;
-import javax.persistence.Embeddable;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.Basic;
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 
 @Embeddable
 @Access(AccessType.FIELD)
@@ -18,12 +18,15 @@ public class IdentityDocument {
 	public IdentityDocumentType getType() {
 		return type;
 	}
+	
 	public void setType(IdentityDocumentType type) {
 		this.type = type;
 	}
+	
 	public String getDescription() {
 		return description;
 	}
+	
 	public void setDescription(String description) {
 		this.description = description;
 	}

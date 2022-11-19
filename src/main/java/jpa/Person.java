@@ -2,9 +2,9 @@ package jpa;
 
 import java.util.List;
 
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class Person {
@@ -16,12 +16,15 @@ public class Person {
 	public Long getId() {
 		return id;
 	}
+	
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
 	public List<IdentityDocumentUsage> getIdentityDocumentsUsages() {
 		return identityDocumentsUsages;
 	}
+	
 	public void setIdentityDocumentsUsages(List<IdentityDocumentUsage> identityDocumentsUsages) {
 		this.identityDocumentsUsages = identityDocumentsUsages;
 	}

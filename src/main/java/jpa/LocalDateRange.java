@@ -2,23 +2,26 @@ package jpa;
 
 import java.time.LocalDate;
 
-import javax.persistence.Embeddable;
+import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class LocalDateRange {
-	private LocalDate start;
-	private LocalDate end;
+	private LocalDate startInclusive;
+	private LocalDate endExclusive;
 	
-	public LocalDate getStart() {
-		return start;
+	public LocalDate getStartInclusive() {
+		return startInclusive;
 	}
-	public void setStart(LocalDate start) {
-		this.start = start;
+	
+	public void setStartInclusive(LocalDate startInclusive) {
+		this.startInclusive = startInclusive;
 	}
-	public LocalDate getEnd() {
-		return end;
+	
+	public LocalDate getEndExclusive() {
+		return endExclusive;
 	}
-	public void setEnd(LocalDate end) {
-		this.end = end;
+	
+	public void setEndExclusive(LocalDate endExclusive) {
+		this.endExclusive = endExclusive;
 	}
 }
